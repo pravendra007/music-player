@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back">
+        <div class="centre">
+            <div class="poster">
+                <img src="b.jpg" alt="" id="pos">
+            </div>
+                <div class="player">
+                <div class="songName">Daddy Mummy. mp3</div>
+                <button id="pre" onclick="prev()"><img src="previous.png" alt=""></button>
+                <button id="play" onclick="playnPauseSong()"><img src="plays.png" alt="" id="image"></button>
+                <button id="nex" onclick="next()"><img src="arrow-10-512.png" alt=""></button>
+            </div>
+            <div id="seek-bar">
+                <div id="fill"></div>
+                <div id="handle"></div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

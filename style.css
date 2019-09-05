@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    background-image: url('hello.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.centre{
+    width: 30%;
+    height: 60%;
+    background-color: rgba(12, 9, 9, 0.438);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+.poster{
+    margin-left: 25%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+#pos{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: animate 4s linear infinite both;
+}
+
+.player{
+    width: 100%;
+    height: 50%;
+}
+.songName{
+    width: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(24, 226, 24);
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid rgb(24, 226, 24);
+    padding: 5px;
+    position: absolute;
+    top: 70%;
+    outline: none;
+}
+#pre{
+    
+    left: 10%;
+}
+#play{
+   left: 45%;
+
+}
+#nex{
+    left: 80%;
+}
+button img{
+    width: 20px;
+    height: 20px;
+
+}
+#seek-bar{
+    width: 300px;
+    height: 5px;
+    border-radius: 50px;
+    background-color:gray;
+    position: absolute;
+    bottom: 7%;
+    margin-left: 60px;
+    display: flex;
+}
+#fill{
+    height: 5px;
+    background-color: royalblue;
+    border-radius: 20px;
+}
+#handle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: royalblue;
+    margin-left: -5px;
+    transform: scale(2);
+    margin-bottom: 2px;
+}
+@media(max-width:400px){
+    .centre{
+        width: 100%;
+    }
+    #seek-bar{
+        width: 270px;
+    }
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+}
